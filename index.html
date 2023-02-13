@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="theme1:">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <main
+    class="h-screen flex justify-center items-center font-League_Spartan theme1:theme1_main theme2:theme2_main theme3:theme3_main">
+    <section class="h-5/6 md:h-1/2 xl:h-4/5 w-10/12 md:w-1/2 xl:w-1/4  flex flex-col justify-around">
+      <section class=" flex justify-between h-7">
+        <h1 class="font-bold text-3xl theme1:text-white theme2:text-veryDarkGrayishYellow theme3:text-lightYellow">calc</h1>
+
+        <div class="flex items-end justify-around gap-4">
+          <span class=" font-bold text-xs theme1:text-white  theme2:text-veryDarkGrayishYellow theme3:text-lightYellow ">THEME</span>
+
+          <div>
+            <div class="flex gap-4">
+              <label class="toggel_button" >
+                <input class="radio" type="radio" name="theme" value="theme1">
+                <span>1</span>
+              </label>
+
+              <label class="toggel_button" >
+                <input class="radio" type="radio" name="theme" value="theme2">
+                <span>2</span>
+              </label>
+
+              <label class="toggel_button">
+                <input class="radio" type="radio" name="theme" value="theme3">
+                <span>3</span>
+              </label>
+            </div>
+
+            <div class="flex justify-between items-center gap-2 rounded-xl theme1:bg-veryDarkDesaturatedBlue2 theme2:bg-grayishRed theme3:bg-veryDarkVoilet2">
+              <span class="theme1:bg-red w-4 h-4 rounded-full inline-block"></span>
+              <span class="theme2:bg-orange w-4 h-4 rounded-full inline-block"></span>
+              <span class="theme3:bg-pureCyan w-4 h-4 rounded-full inline-block"></span>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <input type="text" name="" id="display" class="h-24 rounded-lg theme1:theme1_input_text theme2:theme2_input_text theme3:theme3_input_text" />
+
+      <section
+        class="h-96 rounded-lg p-4 grid grid-flow-row grid-cols-4 gap-4 theme1:theme1_calc_body theme2:theme2_calc_body theme3:theme3_calc_body">
+        <input type="button" value="7"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="8"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="9"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="DEL"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns theme1:theme1_calc_button_reset theme2:theme2_calc_button_reset theme3:theme3_calc_button_reset" />
+        <input type="button" value="4"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="5"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="6"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="+"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="1"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="2"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="3"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="-"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="."
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="0"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="/"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="X"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns" />
+        <input type="button" value="RESET"
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns theme1:theme1_calc_button_reset theme2:theme2_calc_button_reset theme3:theme3_calc_button_reset col-span-2" />
+        <input type="button" value="="
+          class="theme1:theme1_input_btns theme2:theme2_input_btns theme3:theme3_input_btns theme1:theme1_calc_button_equal theme2:theme2_calc_button_equal theme3:theme3_calc_button_equal col-span-2" />
+      </section>
+
+    </section>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    .theme1_main{
+        @apply bg-veryDarkDesaturatedBlue1;
+    }
+    
+    .theme1_input_text{
+        @apply  bg-veryDarkDesaturatedBlue3 p-4 border-none text-4xl font-extrabold text-white text-right;
+    }
+    
+    .theme1_calc_body{
+        @apply bg-veryDarkDesaturatedBlue2;
+    }
+
+    .theme1_input_btns{
+        @apply  bg-lightGrayishOrange hover:bg-white shadow-key shadow-grayishOrange text-veryDarkGrayishBlue rounded-lg cursor-pointer font-bold text-2xl;
+    }
+
+    .theme1_calc_button_reset{
+        @apply  bg-desaturatedDarkBlue1 hover:bg-desaturatedDarkBlue3 shadow-key shadow-desaturatedDarkBlue2 text-white;
+    }
+
+    .theme1_calc_button_equal{
+        @apply  bg-red hover:bg-red2 shadow-key shadow-darkRed text-white;
+    }
+
+
+    .theme2_main{
+        @apply bg-lightGray;
+    }
+    
+    .theme2_input_text{
+        @apply  bg-veryLightGray p-4 border-none text-3xl font-extrabold text-veryDarkGrayishYellow text-right;
+    }
+    
+.theme2_calc_body{
+        @apply bg-grayishRed;
+    }
+
+    .theme2_input_btns{
+        @apply  bg-lightGrayishYellow shadow-key shadow-darkGrayishOrange text-veryDarkGrayishYellow rounded-lg cursor-pointer font-bold text-2xl;
+    }
+
+    .theme2_calc_button_reset{
+        @apply  bg-darkModerateCyan shadow-key shadow-veryDarkCyan  text-white;
+    }
+
+    .theme2_calc_button_equal{
+        @apply  bg-orange shadow-key shadow-darkOrang text-white;
+    }
+
+
+    .theme3_main{
+        @apply bg-veryDarkVoilet1;
+    }
+    
+    .theme3_input_text{
+        @apply  bg-veryDarkVoilet2 p-4 border-none text-4xl font-extrabold text-lightYellow text-right;
+    }
+    
+    .theme3_calc_body{
+        @apply bg-veryDarkVoilet2;
+    }
+
+    .theme3_input_btns{
+        @apply   bg-veryDarkVoilet3 hover:bg-veryDarkVoilet4 shadow-key shadow-vividMagenta  text-lightYellow rounded-lg cursor-pointer font-bold text-2xl;
+    }
+
+    .theme3_calc_button_reset{
+        @apply  bg-darkVoilet hover:bg-darkVoilet2 shadow-key shadow-darkMagneta  text-white;
+    }
+
+    .theme3_calc_button_equal{
+        @apply  bg-pureCyan hover:bg-cyan2 shadow-key shadow-softCyan text-white;
+    }
+    
+    .toggel_button{
+        @apply   font-semibold text-lg relative flex justify-center items-center theme1:text-white theme2:text-veryDarkGrayishYellow theme3:text-lightYellow;  
+    }
+
+    .radio{
+        @apply absolute opacity-0 w-full  h-full top-2 left-1 cursor-pointer;
+    }
+}    
+
+
